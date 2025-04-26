@@ -1,11 +1,9 @@
 <!doctype html>
 <html lang="en">
-  <!-- DO NOT CHANGE CODE WITHIN THE HEAD ELEMENT -->
-  <!-- UNLESS YOU KNOW WHAT YOU"RE DOING-->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Justina Enenche | Developer Portfolio</title>
     <!-- add fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,13 +13,73 @@
     />
     <!-- local style -->
     <link rel="stylesheet" href="styles/global.css" />
+    <!-- optional favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
   </head>
+
   <body>
     <!-- Header Area -->
-    <header></header>
+    <header>
+      <h1>Justina Enenche</h1>
+      <p class="tagline">Web Developer | Blockchain Enthusiast</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <!-- Main Area -->
     <main>
-      <h1>My Amazing Portfolio</h1>
+      <!-- About Me Section -->
+      <section id="about">
+        <h2>About Me</h2>
+        <img src="assets/images/jus.jpg" alt="Profile Picture" class="profile-img">
+        <p>I’m a passionate web developer and blockchain enthusiast with a focus on building impactful digital solutions. I've created platforms like VeriFlux Chain, a car rental website, and a hotel booking site. I love using technology to solve real-world problems and constantly aim to improve my craft!</p>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+          <div class="project">
+            <h3>VeriFlux Chain</h3>
+            <p>A decentralized certificate verification platform designed to combat fraudulent credentials, built using Internet Computer (ICP) technology.</p>
+          </div>
+          <div class="project">
+            <h3>Car Rental Website</h3>
+            <p>A modern, user-friendly car rental platform where users can browse, book, and rent cars seamlessly, with real-time availability updates.</p>
+          </div>
+          <div class="project">
+            <h3>Hotel Booking Site</h3>
+            <p>A hotel booking web application that allows users to search, compare, and reserve hotels easily.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
     </main>
+
+    <!-- Footer Area -->
+    <footer>
+      <p>&copy; 2025 Justina Enenche. All rights reserved.</p>
+    </footer>
   </body>
 </html>
